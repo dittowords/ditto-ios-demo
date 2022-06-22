@@ -8,17 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		9246BAA62862C26A00B28DFE /* DittobnbApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9246BAA52862C26A00B28DFE /* DittobnbApp.swift */; };
-		9246BAA82862C26A00B28DFE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9246BAA72862C26A00B28DFE /* ContentView.swift */; };
+		9246BAA82862C26A00B28DFE /* ActivitiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9246BAA72862C26A00B28DFE /* ActivitiesView.swift */; };
 		9246BAAA2862C26C00B28DFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9246BAA92862C26C00B28DFE /* Assets.xcassets */; };
 		9246BAAD2862C26C00B28DFE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9246BAAC2862C26C00B28DFE /* Preview Assets.xcassets */; };
+		9246BAB42862C2F000B28DFE /* BecomeAHostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9246BAB32862C2F000B28DFE /* BecomeAHostView.swift */; };
+		9246BAB62862C2F800B28DFE /* OnlineExperiencesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9246BAB52862C2F800B28DFE /* OnlineExperiencesView.swift */; };
+		9246BAB82862C30900B28DFE /* PlacesToStayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9246BAB72862C30900B28DFE /* PlacesToStayView.swift */; };
+		9246BABA28637CA400B28DFE /* SideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9246BAB928637CA400B28DFE /* SideMenuView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9246BAA22862C26A00B28DFE /* Dittobnb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dittobnb.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9246BAA52862C26A00B28DFE /* DittobnbApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DittobnbApp.swift; sourceTree = "<group>"; };
-		9246BAA72862C26A00B28DFE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9246BAA72862C26A00B28DFE /* ActivitiesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesView.swift; sourceTree = "<group>"; };
 		9246BAA92862C26C00B28DFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9246BAAC2862C26C00B28DFE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9246BAB32862C2F000B28DFE /* BecomeAHostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BecomeAHostView.swift; sourceTree = "<group>"; };
+		9246BAB52862C2F800B28DFE /* OnlineExperiencesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineExperiencesView.swift; sourceTree = "<group>"; };
+		9246BAB72862C30900B28DFE /* PlacesToStayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesToStayView.swift; sourceTree = "<group>"; };
+		9246BAB928637CA400B28DFE /* SideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,9 +60,13 @@
 			isa = PBXGroup;
 			children = (
 				9246BAA52862C26A00B28DFE /* DittobnbApp.swift */,
-				9246BAA72862C26A00B28DFE /* ContentView.swift */,
+				9246BAA72862C26A00B28DFE /* ActivitiesView.swift */,
+				9246BAB32862C2F000B28DFE /* BecomeAHostView.swift */,
+				9246BAB72862C30900B28DFE /* PlacesToStayView.swift */,
+				9246BAB52862C2F800B28DFE /* OnlineExperiencesView.swift */,
 				9246BAA92862C26C00B28DFE /* Assets.xcassets */,
 				9246BAAB2862C26C00B28DFE /* Preview Content */,
+				9246BAB928637CA400B28DFE /* SideMenuView.swift */,
 			);
 			path = Dittobnb;
 			sourceTree = "<group>";
@@ -137,8 +149,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9246BAA82862C26A00B28DFE /* ContentView.swift in Sources */,
+				9246BAA82862C26A00B28DFE /* ActivitiesView.swift in Sources */,
+				9246BAB62862C2F800B28DFE /* OnlineExperiencesView.swift in Sources */,
 				9246BAA62862C26A00B28DFE /* DittobnbApp.swift in Sources */,
+				9246BABA28637CA400B28DFE /* SideMenuView.swift in Sources */,
+				9246BAB42862C2F000B28DFE /* BecomeAHostView.swift in Sources */,
+				9246BAB82862C30900B28DFE /* PlacesToStayView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
