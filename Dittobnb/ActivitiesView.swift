@@ -18,20 +18,20 @@ struct ActivitiesView: View {
                         .edgesIgnoringSafeArea(.top)
                         .frame(width: geometry.size.width)
                     VStack(alignment: .leading) {
-                        Text("Travel the world with your family")
+                        Text("landing.hero.title")
                             .font(.largeTitle)
-                        .fontWeight(.black)
-                        .foregroundColor(.white)
-                        .frame(width: geometry.size.width)
+                            .fontWeight(.black)
+                            .foregroundColor(.white)
+                            .frame(width: geometry.size.width)
                         
-                    Text("Book some fun places to stay and activities to do")
-                        .font(.title2)
-                        .fontWeight(.black)
-                        .foregroundColor(.white)
-                        .frame(width: geometry.size.width)
-                        .padding(.top, 1)
+                        Text("landing.hero.subtitle")
+                            .font(.title2)
+                            .fontWeight(.black)
+                            .foregroundColor(.white)
+                            .frame(width: geometry.size.width)
+                            .padding(.top, 1)
                         
-                        Button("Explore Stays") {
+                        Button("landing.hero.cta") {
                             print("EXPLORE")
                         }
                         .font(.headline)
@@ -60,6 +60,7 @@ struct ContentView_Previews: PreviewProvider {
         Group {
             ActivitiesView().previewDevice(PreviewDevice(rawValue: "iPhone 13 Pro Max"))
             ActivitiesView().previewDevice(PreviewDevice(rawValue: "iPhone SE (3rd generation)"))
+                .environment(\.locale, .init(identifier: "es"))
         }
         
     }

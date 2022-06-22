@@ -20,19 +20,19 @@ struct DittobnbApp: App {
                         TabView {
                             ActivitiesView()
                                 .tabItem {
-                                    Label("Activities", systemImage: "figure.walk")
+                                    Label("mobile.navbar.activities", systemImage: "figure.walk")
                                 }
                             BecomeAHostView()
                                 .tabItem {
-                                    Label("Host", systemImage: "house")
+                                    Label("mobile.navbar.host", systemImage: "house")
                                 }
                             OnlineExperiencesView()
                                 .tabItem {
-                                    Label("Online", systemImage: "globe")
+                                    Label("mobile.navbar.online", systemImage: "globe")
                                 }
                             PlacesToStayView()
                                 .tabItem {
-                                    Label("Places", systemImage: "building")
+                                    Label("mobile.navbar.places", systemImage: "building")
                                 }
                         }
                         

@@ -12,13 +12,13 @@ struct PlacesToStayView: View {
         GeometryReader { geometry in
             ScrollView {
                 VStack(alignment: .leading) {
-                    Text("Live Anywhere")
+                    Text("landing.body.live-anywhere.title")
                         .font(.largeTitle)
                         .fontWeight(.bold)
                         .padding()
                     ScrollView(.horizontal) {
                         VStack(alignment: .leading) {
-                            Text("Entire Homes")
+                            Text("landing.body.live-anywhere.entire-homes")
                                 .font(.headline)
                                 .padding(.leading)
                             HStack {
@@ -32,7 +32,7 @@ struct PlacesToStayView: View {
                     }
                     ScrollView(.horizontal) {
                         VStack(alignment: .leading) {
-                            Text("Cabins and cottages")
+                            Text("landing.body.live-anywhere.cabins-and-cottages")
                                 .font(.headline)
                                 .padding(.leading)
                             HStack {
@@ -46,7 +46,7 @@ struct PlacesToStayView: View {
                     }
                     ScrollView(.horizontal) {
                         VStack(alignment: .leading) {
-                            Text("Unique stays")
+                            Text("landing.body.live-anywhere.unique-stays")
                                 .font(.headline)
                                 .padding(.leading)
                             HStack {
@@ -60,7 +60,7 @@ struct PlacesToStayView: View {
                     }
                     ScrollView(.horizontal) {
                         VStack(alignment: .leading) {
-                            Text("Pets welcome")
+                            Text("landing.body.live-anywhere.pets-welcome")
                                 .font(.headline)
                                 .padding(.leading)
                             HStack {
@@ -92,6 +92,10 @@ struct PlacesToStayView: View {
 
 struct PlacesToStayView_Previews: PreviewProvider {
     static var previews: some View {
-        PlacesToStayView()
+        Group {
+            PlacesToStayView().previewDevice(PreviewDevice(rawValue: "iPhone 13 Pro Max"))
+            PlacesToStayView().previewDevice(PreviewDevice(rawValue: "iPhone SE (3rd generation)"))
+                .environment(\.locale, .init(identifier: "es"))
+        }
     }
 }

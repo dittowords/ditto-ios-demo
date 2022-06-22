@@ -14,44 +14,47 @@ struct SideMenuView: View {
         GridItem(.fixed(150))
     ]
     var body: some View {
-        VStack(alignment: .leading) {
-            titleItem("note.text", "About")
-            LazyVGrid(columns: gridColumns) {
-                subtitleItem("Company")
-                subtitleItem("Press")
-                subtitleItem("Blog")
-                subtitleItem("Careers")
+        ScrollView {
+            VStack(alignment: .leading) {
+                titleItem("note.text", "footer.about.title")
+                LazyVGrid(columns: gridColumns) {
+                    subtitleItem("footer.about.blog")
+                    subtitleItem("footer.about.press")
+                    subtitleItem("footer.about.blog")
+                    subtitleItem("footer.about.careers")
+                }
+                titleItem("person.2.fill", "footer.community.title")
+                LazyVGrid(columns: gridColumns) {
+                    subtitleItem("footer.community.accessibility")
+                    subtitleItem("footer.community.guests")
+                    subtitleItem("footer.community.invite")
+                    subtitleItem("footer.community.share")
+                }
+                titleItem("house.fill", "footer.host.title")
+                LazyVGrid(columns: gridColumns) {
+                    subtitleItem("landing.body.join-hosts.host-home")
+                    subtitleItem("landing.body.join-hosts.host-experience")
+                    subtitleItem("landing.body.join-hosts.host-online-experience")
+                    subtitleItem("footer.host.refer")
+                    subtitleItem("footer.host.resources")
+                }
+                titleItem("mail.fill", "footer.support.title")
+                LazyVGrid(columns: gridColumns) {
+                    subtitleItem("footer.support.help")
+                    subtitleItem("footer.support.trust-safety")
+                    subtitleItem("footer.support.cancellation")
+                }
+                Spacer()
             }
-            titleItem("person.2.fill", "Community")
-            LazyVGrid(columns: gridColumns) {
-                subtitleItem("Accessibility")
-                subtitleItem("Guest community")
-                subtitleItem("Invite your friends")
-                subtitleItem("Share your stay")
-            }
-            titleItem("house.fill", "Host")
-            LazyVGrid(columns: gridColumns) {
-                subtitleItem("Host your own home")
-                subtitleItem("Host an experience")
-                subtitleItem("Host an online experience")
-                subtitleItem("Refer hosts")
-                subtitleItem("Host resources")
-            }
-            titleItem("mail.fill", "Support")
-            LazyVGrid(columns: gridColumns) {
-                subtitleItem("Help Center")
-                subtitleItem("Trust and Safety")
-                subtitleItem("Cancellation Options")
-            }
-            Spacer()
+            .padding()
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .background(Color(red: 32/255, green: 32/255, blue: 32/255))
         }
-        .padding()
-        .frame(maxWidth: .infinity, alignment: .leading)
         .background(Color(red: 32/255, green: 32/255, blue: 32/255))
     }
     
     @ViewBuilder
-    func titleItem(_ icon: String, _ title: String) -> some View {
+    func titleItem(_ icon: String, _ title: LocalizedStringKey) -> some View {
         HStack {
             Image(systemName: icon)
                 .foregroundColor(.gray)
@@ -65,7 +68,7 @@ struct SideMenuView: View {
     }
     
     @ViewBuilder
-    func subtitleItem(_ title: String) -> some View {
+    func subtitleItem(_ title: LocalizedStringKey) -> some View {
         HStack {
             Text(title)
                 .foregroundColor(.gray)
@@ -78,6 +81,10 @@ struct SideMenuView: View {
 
 struct SideMenuView_Previews: PreviewProvider {
     static var previews: some View {
-        SideMenuView()
+        Group {
+            SideMenuView().previewDevice(PreviewDevice(rawValue: "iPhone 13 Pro Max"))
+            SideMenuView().previewDevice(PreviewDevice(rawValue: "iPhone SE (3rd generation)"))
+                .environment(\.locale, .init(identifier: "es"))
+        }
     }
 }

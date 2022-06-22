@@ -9,20 +9,20 @@ import SwiftUI
 
 struct OnlineExperiencesView: View {
     
-    private let experiences = [("onlineexp0", "Attend a live personal concert by local indie bands"), ("onlineexp1", "Learn photography and photo editing from industry pros"), ("onlineexp2", "Event Support"), ("onlineexp3", "Experience stovetop tricks from famed hibachi artists")]
+    private let experiences: [(String, LocalizedStringKey)] = [("onlineexp0", "landing.body.online-experiences.live-concert"), ("onlineexp1", "landing.body.online-experiences.learn-photography"), ("onlineexp2", "landing.body.online-experiences.event-support"), ("onlineexp3", "landing.body.online-experiences.stovetop-tricks")]
     
     var body: some View {
         GeometryReader { geometry in
             ScrollView {
                 VStack(alignment: .leading) {
-                    Text("Online Experiences")
+                    Text("landing.body.online-experiences.title")
                         .font(.largeTitle)
                         .fontWeight(.bold)
                         .padding()
                     experienceCard(experiences[0], CGSize(width: 1, height: 1))
                     HStack(alignment: .top) {
-                    experienceCard(experiences[1], CGSize(width: 1, height: 1))
-                    experienceCard(experiences[2], CGSize(width: 1, height: 1))
+                        experienceCard(experiences[1], CGSize(width: 1, height: 1))
+                        experienceCard(experiences[2], CGSize(width: 1, height: 1))
                     }
                     experienceCard(experiences[3], CGSize(width: 2, height: 1))
                 }
@@ -30,7 +30,7 @@ struct OnlineExperiencesView: View {
         }
     }
     
-    func experienceCard(_ experience: (String, String), _ aspectRatio: CGSize) -> some View {
+    func experienceCard(_ experience: (String, LocalizedStringKey), _ aspectRatio: CGSize) -> some View {
         VStack {
             Image(experience.0)
                 .resizable()
@@ -49,7 +49,11 @@ struct OnlineExperiencesView: View {
     
     struct OnlineExperiencesView_Previews: PreviewProvider {
         static var previews: some View {
-            OnlineExperiencesView()
+            Group {
+                OnlineExperiencesView().previewDevice(PreviewDevice(rawValue: "iPhone 13 Pro Max"))
+                OnlineExperiencesView().previewDevice(PreviewDevice(rawValue: "iPhone SE (3rd generation)"))
+                    .environment(\.locale, .init(identifier: "es"))
+            }
         }
     }
 }

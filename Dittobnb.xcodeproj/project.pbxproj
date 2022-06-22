@@ -15,6 +15,8 @@
 		9246BAB62862C2F800B28DFE /* OnlineExperiencesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9246BAB52862C2F800B28DFE /* OnlineExperiencesView.swift */; };
 		9246BAB82862C30900B28DFE /* PlacesToStayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9246BAB72862C30900B28DFE /* PlacesToStayView.swift */; };
 		9246BABA28637CA400B28DFE /* SideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9246BAB928637CA400B28DFE /* SideMenuView.swift */; };
+		9246BACA2863B40700B28DFE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9246BAC42863B40700B28DFE /* Localizable.strings */; };
+		9246BACB2863B40700B28DFE /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 9246BAC62863B40700B28DFE /* Localizable.stringsdict */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,10 @@
 		9246BAB52862C2F800B28DFE /* OnlineExperiencesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineExperiencesView.swift; sourceTree = "<group>"; };
 		9246BAB72862C30900B28DFE /* PlacesToStayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesToStayView.swift; sourceTree = "<group>"; };
 		9246BAB928637CA400B28DFE /* SideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuView.swift; sourceTree = "<group>"; };
+		9246BAC52863B40700B28DFE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		9246BAC72863B40700B28DFE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = en; path = en.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
+		9246BAD22863B45B00B28DFE /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		9246BAD32863B45B00B28DFE /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = es; path = es.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,13 +65,14 @@
 		9246BAA42862C26A00B28DFE /* Dittobnb */ = {
 			isa = PBXGroup;
 			children = (
-				9246BAA52862C26A00B28DFE /* DittobnbApp.swift */,
 				9246BAA72862C26A00B28DFE /* ActivitiesView.swift */,
-				9246BAB32862C2F000B28DFE /* BecomeAHostView.swift */,
-				9246BAB72862C30900B28DFE /* PlacesToStayView.swift */,
-				9246BAB52862C2F800B28DFE /* OnlineExperiencesView.swift */,
 				9246BAA92862C26C00B28DFE /* Assets.xcassets */,
+				9246BAB32862C2F000B28DFE /* BecomeAHostView.swift */,
+				9246BAA52862C26A00B28DFE /* DittobnbApp.swift */,
+				9246BAB52862C2F800B28DFE /* OnlineExperiencesView.swift */,
+				9246BAB72862C30900B28DFE /* PlacesToStayView.swift */,
 				9246BAAB2862C26C00B28DFE /* Preview Content */,
+				9246BABF2863B3EA00B28DFE /* Resources */,
 				9246BAB928637CA400B28DFE /* SideMenuView.swift */,
 			);
 			path = Dittobnb;
@@ -77,6 +84,15 @@
 				9246BAAC2862C26C00B28DFE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9246BABF2863B3EA00B28DFE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9246BAC42863B40700B28DFE /* Localizable.strings */,
+				9246BAC62863B40700B28DFE /* Localizable.stringsdict */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -121,6 +137,7 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
 			);
 			mainGroup = 9246BA992862C26A00B28DFE;
 			productRefGroup = 9246BAA32862C26A00B28DFE /* Products */;
@@ -137,8 +154,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9246BACA2863B40700B28DFE /* Localizable.strings in Resources */,
 				9246BAAD2862C26C00B28DFE /* Preview Assets.xcassets in Resources */,
 				9246BAAA2862C26C00B28DFE /* Assets.xcassets in Resources */,
+				9246BACB2863B40700B28DFE /* Localizable.stringsdict in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,6 +178,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9246BAC42863B40700B28DFE /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9246BAC52863B40700B28DFE /* en */,
+				9246BAD22863B45B00B28DFE /* es */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		9246BAC62863B40700B28DFE /* Localizable.stringsdict */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9246BAC72863B40700B28DFE /* en */,
+				9246BAD32863B45B00B28DFE /* es */,
+			);
+			name = Localizable.stringsdict;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		9246BAAE2862C26C00B28DFE /* Debug */ = {
