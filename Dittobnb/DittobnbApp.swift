@@ -36,7 +36,7 @@ struct DittobnbApp: App {
                                 }
                         }
                         
-                        SideMenu(width: geometry.size.width - 50,
+                        SideMenuView(width: geometry.size.width - 50,
                                  isOpen: self.menuOpen,
                                  menuClose: self.openMenu)
                     }
@@ -54,24 +54,5 @@ struct DittobnbApp: App {
     
     func openMenu() {
         self.menuOpen.toggle()
-    }
-}
-
-
-struct SideMenu: View {
-    let width: CGFloat
-    let isOpen: Bool
-    let menuClose: () -> Void
-    
-    var body: some View {
-        HStack {
-            SideMenuView()
-                .frame(width: self.width)
-                .background(Color.white)
-                .offset(x: self.isOpen ? 0 : -self.width)
-                .animation(.easeInOut(duration: 0.2), value: isOpen)
-            
-            Spacer()
-        }
     }
 }

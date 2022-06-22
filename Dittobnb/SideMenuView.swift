@@ -13,44 +13,56 @@ struct SideMenuView: View {
         GridItem(.fixed(150)),
         GridItem(.fixed(150))
     ]
+    
+    let width: CGFloat
+    let isOpen: Bool
+    let menuClose: () -> Void
+    
     var body: some View {
-        ScrollView {
-            VStack(alignment: .leading) {
-                titleItem("note.text", "footer.about.title")
-                LazyVGrid(columns: gridColumns) {
-                    subtitleItem("footer.about.blog")
-                    subtitleItem("footer.about.press")
-                    subtitleItem("footer.about.blog")
-                    subtitleItem("footer.about.careers")
+        HStack {
+            ScrollView {
+                VStack(alignment: .leading) {
+                    titleItem("note.text", "footer.about.title")
+                    LazyVGrid(columns: gridColumns) {
+                        subtitleItem("footer.about.blog")
+                        subtitleItem("footer.about.press")
+                        subtitleItem("footer.about.blog")
+                        subtitleItem("footer.about.careers")
+                    }
+                    titleItem("person.2.fill", "footer.community.title")
+                    LazyVGrid(columns: gridColumns) {
+                        subtitleItem("footer.community.accessibility")
+                        subtitleItem("footer.community.guests")
+                        subtitleItem("footer.community.invite")
+                        subtitleItem("footer.community.share")
+                    }
+                    titleItem("house.fill", "footer.host.title")
+                    LazyVGrid(columns: gridColumns) {
+                        subtitleItem("landing.body.join-hosts.host-home")
+                        subtitleItem("landing.body.join-hosts.host-experience")
+                        subtitleItem("landing.body.join-hosts.host-online-experience")
+                        subtitleItem("footer.host.refer")
+                        subtitleItem("footer.host.resources")
+                    }
+                    titleItem("mail.fill", "footer.support.title")
+                    LazyVGrid(columns: gridColumns) {
+                        subtitleItem("footer.support.help")
+                        subtitleItem("footer.support.trust-safety")
+                        subtitleItem("footer.support.cancellation")
+                    }
+                    Spacer()
                 }
-                titleItem("person.2.fill", "footer.community.title")
-                LazyVGrid(columns: gridColumns) {
-                    subtitleItem("footer.community.accessibility")
-                    subtitleItem("footer.community.guests")
-                    subtitleItem("footer.community.invite")
-                    subtitleItem("footer.community.share")
-                }
-                titleItem("house.fill", "footer.host.title")
-                LazyVGrid(columns: gridColumns) {
-                    subtitleItem("landing.body.join-hosts.host-home")
-                    subtitleItem("landing.body.join-hosts.host-experience")
-                    subtitleItem("landing.body.join-hosts.host-online-experience")
-                    subtitleItem("footer.host.refer")
-                    subtitleItem("footer.host.resources")
-                }
-                titleItem("mail.fill", "footer.support.title")
-                LazyVGrid(columns: gridColumns) {
-                    subtitleItem("footer.support.help")
-                    subtitleItem("footer.support.trust-safety")
-                    subtitleItem("footer.support.cancellation")
-                }
-                Spacer()
+                .padding()
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .background(Color(red: 32/255, green: 32/255, blue: 32/255))
             }
-            .padding()
-            .frame(maxWidth: .infinity, alignment: .leading)
+            .frame(width: self.width)
             .background(Color(red: 32/255, green: 32/255, blue: 32/255))
+            .offset(x: self.isOpen ? 0 : -self.width)
+            .animation(.easeInOut(duration: 0.2), value: isOpen)
+            
+            Spacer()
         }
-        .background(Color(red: 32/255, green: 32/255, blue: 32/255))
     }
     
     @ViewBuilder
@@ -82,8 +94,8 @@ struct SideMenuView: View {
 struct SideMenuView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            SideMenuView().previewDevice(PreviewDevice(rawValue: "iPhone 13 Pro Max"))
-            SideMenuView().previewDevice(PreviewDevice(rawValue: "iPhone SE (3rd generation)"))
+            SideMenuView(width: 170, isOpen: true, menuClose: {}).previewDevice(PreviewDevice(rawValue: "iPhone 13 Pro Max"))
+            SideMenuView(width: 170, isOpen: true, menuClose: {}).previewDevice(PreviewDevice(rawValue: "iPhone SE (3rd generation)"))
                 .environment(\.locale, .init(identifier: "es"))
         }
     }
