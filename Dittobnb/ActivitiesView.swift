@@ -22,14 +22,14 @@ struct ActivitiesView: View {
                             .font(.largeTitle)
                             .fontWeight(.black)
                             .foregroundColor(.white)
-                            .frame(width: geometry.size.width)
+                            .padding(.horizontal)
                         
                         Text("landing.hero.subtitle")
                             .font(.title2)
                             .fontWeight(.black)
                             .foregroundColor(.white)
-                            .frame(width: geometry.size.width)
                             .padding(.top, 1)
+                            .padding(.horizontal)
                         
                         Button("landing.hero.cta") {
                             print("EXPLORE")
@@ -39,8 +39,9 @@ struct ActivitiesView: View {
                         .background(.white)
                         .foregroundColor(.black)
                         .cornerRadius(8)
-                        .padding(.leading, 32)
+                        .padding(.horizontal)
                     }
+                    .padding(.top, 50)
                     
                 }
                 .frame(width: geometry.size.width, height: geometry.size.height)
