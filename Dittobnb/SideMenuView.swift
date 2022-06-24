@@ -26,7 +26,7 @@ struct SideMenuView: View {
                     LazyVGrid(columns: gridColumns) {
                         subtitleItem("footer.about.blog")
                         subtitleItem("footer.about.press")
-                        subtitleItem("footer.about.blog")
+                        subtitleItem("footer.about.company")
                         subtitleItem("footer.about.careers")
                     }
                     titleItem("person.2.fill", "footer.community.title")
@@ -94,8 +94,8 @@ struct SideMenuView: View {
 struct SideMenuView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            SideMenuView(width: 170, isOpen: true, menuClose: {}).previewDevice(PreviewDevice(rawValue: "iPhone 13 Pro Max"))
-            SideMenuView(width: 170, isOpen: true, menuClose: {}).previewDevice(PreviewDevice(rawValue: "iPhone SE (3rd generation)"))
+            SideMenuView(width: 500, isOpen: true, menuClose: {}).previewDevice(PreviewDevice(rawValue: "iPhone 13 Pro Max"))
+            SideMenuView(width: 500, isOpen: true, menuClose: {}).previewDevice(PreviewDevice(rawValue: "iPhone SE (3rd generation)"))
                 .environment(\.locale, .init(identifier: "es"))
         }
     }
