@@ -53,7 +53,7 @@ To sync edits from design all the way to development, you can integrate your Dit
 2. Import the file as a new Ditto project via our [Figma plugin](https://www.figma.com/community/plugin/798826066406007173/%E2%9C%8D%EF%B8%8F-Ditto-%7C-collaborate-on-copy).
 3. Connect your component library to your Ditto project. You can do this quickly via our [Component Suggestions](https://www.dittowords.com/blog/introducing-component-suggestions)!
 4. Make an edit to text via our Figma plugin.
-5. Follow steps 5-9 under [Making an Example Edit](https://github.com/dittowords/ditto-ios-demo/edit/main/README.md#-making-an-example-edit) and you should see the edits made in Ditto!
+5. Follow steps 5-9 under [Making an Example Edit](https://github.com/dittowords/ditto-ios-demo#-making-an-example-edit) and you should see the edits made in Ditto!
 
 ## Expanding
 
