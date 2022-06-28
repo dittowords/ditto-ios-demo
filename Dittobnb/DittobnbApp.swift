@@ -48,6 +48,7 @@ struct DittobnbApp: App {
                             .tint(.black)
                     }))
                 }
+                .navigationViewStyle(StackNavigationViewStyle())
             }
         }
     }
