@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/dittowords/swift",
+      "state" : {
+        "branch" : "dev",
+        "revision" : "c2b8160dfc1926db4b551c465e3e11bfb56b6317"
+      }
+    }
+  ],
+  "version" : 2
+}

@@ -1,0 +1,12 @@
+sources:
+  components:
+    folders:
+      - id: sample-components
+        name: Sample Components
+variants: true
+format:
+  - ios-strings
+  - ios-stringsdict
+ios_locales:
+  - base: en
+  - pt: portuguese---br-sample

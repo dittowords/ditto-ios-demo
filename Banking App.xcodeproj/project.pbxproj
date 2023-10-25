@@ -1,0 +1,565 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		92157D712AE9830E00165C70 /* components.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 92157D6A2AE9830D00165C70 /* components.stringsdict */; };
+		92157D722AE9830E00165C70 /* Ditto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92157D6D2AE9830E00165C70 /* Ditto.swift */; };
+		92157D732AE9830E00165C70 /* components.strings in Resources */ = {isa = PBXBuildFile; fileRef = 92157D6E2AE9830E00165C70 /* components.strings */; };
+		92157D752AE98F4400165C70 /* DittoActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92157D742AE98F4400165C70 /* DittoActionButton.swift */; };
+		92157D772AE994A000165C70 /* DittoBackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92157D762AE994A000165C70 /* DittoBackButton.swift */; };
+		928D75F72AD4759F008FCC4D /* Banking_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928D75F62AD4759F008FCC4D /* Banking_App.swift */; };
+		928D75F92AD4759F008FCC4D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928D75F82AD4759F008FCC4D /* LoginView.swift */; };
+		928D75FB2AD475A0008FCC4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 928D75FA2AD475A0008FCC4D /* Assets.xcassets */; };
+		928D75FE2AD475A0008FCC4D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 928D75FD2AD475A0008FCC4D /* Preview Assets.xcassets */; };
+		928D76062AD476FB008FCC4D /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928D76052AD476FB008FCC4D /* SignUpView.swift */; };
+		928D76082AD4770B008FCC4D /* ConfirmIdentityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928D76072AD4770B008FCC4D /* ConfirmIdentityView.swift */; };
+		928D760A2AD47729008FCC4D /* PhoneNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928D76092AD47729008FCC4D /* PhoneNumberView.swift */; };
+		928D760D2AD47752008FCC4D /* VerifyPhoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928D760C2AD47752008FCC4D /* VerifyPhoneView.swift */; };
+		928D76112AD47914008FCC4D /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928D76102AD47914008FCC4D /* Router.swift */; };
+		928D76132AD47A03008FCC4D /* RouterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928D76122AD47A03008FCC4D /* RouterView.swift */; };
+		92EBBB552AD5ECD9008F6E9C /* Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 92EBBB4C2AD5ECD9008F6E9C /* Inter-Medium.ttf */; };
+		92EBBB562AD5ECD9008F6E9C /* Inter-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 92EBBB4D2AD5ECD9008F6E9C /* Inter-Black.ttf */; };
+		92EBBB572AD5ECD9008F6E9C /* Inter-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 92EBBB4E2AD5ECD9008F6E9C /* Inter-Light.ttf */; };
+		92EBBB582AD5ECD9008F6E9C /* Inter-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 92EBBB4F2AD5ECD9008F6E9C /* Inter-ExtraBold.ttf */; };
+		92EBBB592AD5ECD9008F6E9C /* Inter-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 92EBBB502AD5ECD9008F6E9C /* Inter-Thin.ttf */; };
+		92EBBB5A2AD5ECD9008F6E9C /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 92EBBB512AD5ECD9008F6E9C /* Inter-SemiBold.ttf */; };
+		92EBBB5B2AD5ECD9008F6E9C /* Inter-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 92EBBB522AD5ECD9008F6E9C /* Inter-Bold.ttf */; };
+		92EBBB5C2AD5ECD9008F6E9C /* Inter-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 92EBBB532AD5ECD9008F6E9C /* Inter-ExtraLight.ttf */; };
+		92EBBB5D2AD5ECD9008F6E9C /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 92EBBB542AD5ECD9008F6E9C /* Inter-Regular.ttf */; };
+		92EBBB612AD5EECA008F6E9C /* DittoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EBBB602AD5EECA008F6E9C /* DittoTextField.swift */; };
+		92EBBB632AD5EFB7008F6E9C /* DittoConfirmButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EBBB622AD5EFB7008F6E9C /* DittoConfirmButton.swift */; };
+		92EBBB652AD5F365008F6E9C /* DittoFieldHeaderText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EBBB642AD5F365008F6E9C /* DittoFieldHeaderText.swift */; };
+		92EBBB672AD5FA35008F6E9C /* DittoDescriptionText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EBBB662AD5FA35008F6E9C /* DittoDescriptionText.swift */; };
+		92EBBB692AD5FCA9008F6E9C /* LinkBankView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EBBB682AD5FCA9008F6E9C /* LinkBankView.swift */; };
+		92EBBB6B2AD5FCDF008F6E9C /* AccountDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EBBB6A2AD5FCDF008F6E9C /* AccountDetailsView.swift */; };
+		92EBBB6F2AD604E0008F6E9C /* DittoSelect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EBBB6E2AD604E0008F6E9C /* DittoSelect.swift */; };
+		92EBBB712AD70532008F6E9C /* DittoTitleText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EBBB702AD70532008F6E9C /* DittoTitleText.swift */; };
+		92EBBB732AD70AB1008F6E9C /* DittoCancelButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EBBB722AD70AB1008F6E9C /* DittoCancelButton.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		92157D6B2AE9830D00165C70 /* portuguese---br-sample */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = "portuguese---br-sample"; path = "ditto/portuguese---br-sample.lproj/components.stringsdict"; sourceTree = SOURCE_ROOT; };
+		92157D6C2AE9830E00165C70 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = en; path = ditto/en.lproj/components.stringsdict; sourceTree = SOURCE_ROOT; };
+		92157D6D2AE9830E00165C70 /* Ditto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Ditto.swift; path = ditto/Ditto.swift; sourceTree = SOURCE_ROOT; };
+		92157D6F2AE9830E00165C70 /* portuguese---br-sample */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "portuguese---br-sample"; path = "ditto/portuguese---br-sample.lproj/components.strings"; sourceTree = SOURCE_ROOT; };
+		92157D702AE9830E00165C70 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = ditto/en.lproj/components.strings; sourceTree = SOURCE_ROOT; };
+		92157D742AE98F4400165C70 /* DittoActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DittoActionButton.swift; sourceTree = "<group>"; };
+		92157D762AE994A000165C70 /* DittoBackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DittoBackButton.swift; sourceTree = "<group>"; };
+		928D75F32AD4759F008FCC4D /* Banking App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Banking App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		928D75F62AD4759F008FCC4D /* Banking_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Banking_App.swift; sourceTree = "<group>"; };
+		928D75F82AD4759F008FCC4D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		928D75FA2AD475A0008FCC4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		928D75FD2AD475A0008FCC4D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		928D75FF2AD475A0008FCC4D /* Banking_App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Banking_App.entitlements; sourceTree = "<group>"; };
+		928D76052AD476FB008FCC4D /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		928D76072AD4770B008FCC4D /* ConfirmIdentityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmIdentityView.swift; sourceTree = "<group>"; };
+		928D76092AD47729008FCC4D /* PhoneNumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberView.swift; sourceTree = "<group>"; };
+		928D760C2AD47752008FCC4D /* VerifyPhoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyPhoneView.swift; sourceTree = "<group>"; };
+		928D76102AD47914008FCC4D /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		928D76122AD47A03008FCC4D /* RouterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterView.swift; sourceTree = "<group>"; };
+		92EBBB4C2AD5ECD9008F6E9C /* Inter-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Medium.ttf"; sourceTree = "<group>"; };
+		92EBBB4D2AD5ECD9008F6E9C /* Inter-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Black.ttf"; sourceTree = "<group>"; };
+		92EBBB4E2AD5ECD9008F6E9C /* Inter-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Light.ttf"; sourceTree = "<group>"; };
+		92EBBB4F2AD5ECD9008F6E9C /* Inter-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-ExtraBold.ttf"; sourceTree = "<group>"; };
+		92EBBB502AD5ECD9008F6E9C /* Inter-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Thin.ttf"; sourceTree = "<group>"; };
+		92EBBB512AD5ECD9008F6E9C /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
+		92EBBB522AD5ECD9008F6E9C /* Inter-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Bold.ttf"; sourceTree = "<group>"; };
+		92EBBB532AD5ECD9008F6E9C /* Inter-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-ExtraLight.ttf"; sourceTree = "<group>"; };
+		92EBBB542AD5ECD9008F6E9C /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
+		92EBBB5E2AD5ED35008F6E9C /* Banking-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Banking-App-Info.plist"; sourceTree = SOURCE_ROOT; };
+		92EBBB602AD5EECA008F6E9C /* DittoTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DittoTextField.swift; sourceTree = "<group>"; };
+		92EBBB622AD5EFB7008F6E9C /* DittoConfirmButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DittoConfirmButton.swift; sourceTree = "<group>"; };
+		92EBBB642AD5F365008F6E9C /* DittoFieldHeaderText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DittoFieldHeaderText.swift; sourceTree = "<group>"; };
+		92EBBB662AD5FA35008F6E9C /* DittoDescriptionText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DittoDescriptionText.swift; sourceTree = "<group>"; };
+		92EBBB682AD5FCA9008F6E9C /* LinkBankView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkBankView.swift; sourceTree = "<group>"; };
+		92EBBB6A2AD5FCDF008F6E9C /* AccountDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountDetailsView.swift; sourceTree = "<group>"; };
+		92EBBB6E2AD604E0008F6E9C /* DittoSelect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DittoSelect.swift; sourceTree = "<group>"; };
+		92EBBB702AD70532008F6E9C /* DittoTitleText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DittoTitleText.swift; sourceTree = "<group>"; };
+		92EBBB722AD70AB1008F6E9C /* DittoCancelButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DittoCancelButton.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		928D75F02AD4759F008FCC4D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		92157D692AE982FD00165C70 /* Ditto */ = {
+			isa = PBXGroup;
+			children = (
+				92157D6E2AE9830E00165C70 /* components.strings */,
+				92157D6A2AE9830D00165C70 /* components.stringsdict */,
+				92157D6D2AE9830E00165C70 /* Ditto.swift */,
+			);
+			path = Ditto;
+			sourceTree = "<group>";
+		};
+		928D75EA2AD4759F008FCC4D = {
+			isa = PBXGroup;
+			children = (
+				928D75F52AD4759F008FCC4D /* Banking App */,
+				928D75F42AD4759F008FCC4D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		928D75F42AD4759F008FCC4D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				928D75F32AD4759F008FCC4D /* Banking App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		928D75F52AD4759F008FCC4D /* Banking App */ = {
+			isa = PBXGroup;
+			children = (
+				92157D692AE982FD00165C70 /* Ditto */,
+				92EBBB5E2AD5ED35008F6E9C /* Banking-App-Info.plist */,
+				92EBBB4B2AD5ECB2008F6E9C /* Fonts */,
+				928D760F2AD47906008FCC4D /* Utils */,
+				928D760E2AD4776E008FCC4D /* Login & Signup Flows */,
+				928D75F62AD4759F008FCC4D /* Banking_App.swift */,
+				928D76122AD47A03008FCC4D /* RouterView.swift */,
+				928D75FA2AD475A0008FCC4D /* Assets.xcassets */,
+				928D75FF2AD475A0008FCC4D /* Banking_App.entitlements */,
+				928D75FC2AD475A0008FCC4D /* Preview Content */,
+			);
+			path = "Banking App";
+			sourceTree = "<group>";
+		};
+		928D75FC2AD475A0008FCC4D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				928D75FD2AD475A0008FCC4D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		928D760E2AD4776E008FCC4D /* Login & Signup Flows */ = {
+			isa = PBXGroup;
+			children = (
+				92EBBB5F2AD5EEB9008F6E9C /* Views */,
+				928D75F82AD4759F008FCC4D /* LoginView.swift */,
+				928D76092AD47729008FCC4D /* PhoneNumberView.swift */,
+				928D76072AD4770B008FCC4D /* ConfirmIdentityView.swift */,
+				928D760C2AD47752008FCC4D /* VerifyPhoneView.swift */,
+				92EBBB682AD5FCA9008F6E9C /* LinkBankView.swift */,
+				92EBBB6A2AD5FCDF008F6E9C /* AccountDetailsView.swift */,
+				928D76052AD476FB008FCC4D /* SignUpView.swift */,
+			);
+			path = "Login & Signup Flows";
+			sourceTree = "<group>";
+		};
+		928D760F2AD47906008FCC4D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				928D76102AD47914008FCC4D /* Router.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		92EBBB4B2AD5ECB2008F6E9C /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				92EBBB4D2AD5ECD9008F6E9C /* Inter-Black.ttf */,
+				92EBBB522AD5ECD9008F6E9C /* Inter-Bold.ttf */,
+				92EBBB4F2AD5ECD9008F6E9C /* Inter-ExtraBold.ttf */,
+				92EBBB532AD5ECD9008F6E9C /* Inter-ExtraLight.ttf */,
+				92EBBB4E2AD5ECD9008F6E9C /* Inter-Light.ttf */,
+				92EBBB4C2AD5ECD9008F6E9C /* Inter-Medium.ttf */,
+				92EBBB542AD5ECD9008F6E9C /* Inter-Regular.ttf */,
+				92EBBB512AD5ECD9008F6E9C /* Inter-SemiBold.ttf */,
+				92EBBB502AD5ECD9008F6E9C /* Inter-Thin.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		92EBBB5F2AD5EEB9008F6E9C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				92EBBB602AD5EECA008F6E9C /* DittoTextField.swift */,
+				92EBBB622AD5EFB7008F6E9C /* DittoConfirmButton.swift */,
+				92157D762AE994A000165C70 /* DittoBackButton.swift */,
+				92157D742AE98F4400165C70 /* DittoActionButton.swift */,
+				92EBBB722AD70AB1008F6E9C /* DittoCancelButton.swift */,
+				92EBBB642AD5F365008F6E9C /* DittoFieldHeaderText.swift */,
+				92EBBB662AD5FA35008F6E9C /* DittoDescriptionText.swift */,
+				92EBBB6E2AD604E0008F6E9C /* DittoSelect.swift */,
+				92EBBB702AD70532008F6E9C /* DittoTitleText.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		928D75F22AD4759F008FCC4D /* Banking App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 928D76022AD475A0008FCC4D /* Build configuration list for PBXNativeTarget "Banking App" */;
+			buildPhases = (
+				928D75EF2AD4759F008FCC4D /* Sources */,
+				928D75F02AD4759F008FCC4D /* Frameworks */,
+				928D75F12AD4759F008FCC4D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Banking App";
+			packageProductDependencies = (
+			);
+			productName = "Banking App";
+			productReference = 928D75F32AD4759F008FCC4D /* Banking App.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		928D75EB2AD4759F008FCC4D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					928D75F22AD4759F008FCC4D = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = 928D75EE2AD4759F008FCC4D /* Build configuration list for PBXProject "Banking App" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"pt-BR",
+				base,
+				"portuguese---br-sample",
+				"portuguese---BR-sample",
+			);
+			mainGroup = 928D75EA2AD4759F008FCC4D;
+			packageReferences = (
+				92EBBB222AD5B8A4008F6E9C /* XCRemoteSwiftPackageReference "swift" */,
+			);
+			productRefGroup = 928D75F42AD4759F008FCC4D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				928D75F22AD4759F008FCC4D /* Banking App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		928D75F12AD4759F008FCC4D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92157D712AE9830E00165C70 /* components.stringsdict in Resources */,
+				928D75FE2AD475A0008FCC4D /* Preview Assets.xcassets in Resources */,
+				92EBBB562AD5ECD9008F6E9C /* Inter-Black.ttf in Resources */,
+				92EBBB5B2AD5ECD9008F6E9C /* Inter-Bold.ttf in Resources */,
+				92EBBB592AD5ECD9008F6E9C /* Inter-Thin.ttf in Resources */,
+				92EBBB582AD5ECD9008F6E9C /* Inter-ExtraBold.ttf in Resources */,
+				92EBBB5C2AD5ECD9008F6E9C /* Inter-ExtraLight.ttf in Resources */,
+				92EBBB5D2AD5ECD9008F6E9C /* Inter-Regular.ttf in Resources */,
+				92EBBB552AD5ECD9008F6E9C /* Inter-Medium.ttf in Resources */,
+				92157D732AE9830E00165C70 /* components.strings in Resources */,
+				928D75FB2AD475A0008FCC4D /* Assets.xcassets in Resources */,
+				92EBBB5A2AD5ECD9008F6E9C /* Inter-SemiBold.ttf in Resources */,
+				92EBBB572AD5ECD9008F6E9C /* Inter-Light.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		928D75EF2AD4759F008FCC4D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92EBBB732AD70AB1008F6E9C /* DittoCancelButton.swift in Sources */,
+				92EBBB712AD70532008F6E9C /* DittoTitleText.swift in Sources */,
+				92EBBB6F2AD604E0008F6E9C /* DittoSelect.swift in Sources */,
+				928D760D2AD47752008FCC4D /* VerifyPhoneView.swift in Sources */,
+				928D75F92AD4759F008FCC4D /* LoginView.swift in Sources */,
+				92EBBB672AD5FA35008F6E9C /* DittoDescriptionText.swift in Sources */,
+				928D760A2AD47729008FCC4D /* PhoneNumberView.swift in Sources */,
+				928D76112AD47914008FCC4D /* Router.swift in Sources */,
+				92EBBB612AD5EECA008F6E9C /* DittoTextField.swift in Sources */,
+				92157D772AE994A000165C70 /* DittoBackButton.swift in Sources */,
+				928D76062AD476FB008FCC4D /* SignUpView.swift in Sources */,
+				92157D722AE9830E00165C70 /* Ditto.swift in Sources */,
+				92EBBB6B2AD5FCDF008F6E9C /* AccountDetailsView.swift in Sources */,
+				92EBBB652AD5F365008F6E9C /* DittoFieldHeaderText.swift in Sources */,
+				92EBBB632AD5EFB7008F6E9C /* DittoConfirmButton.swift in Sources */,
+				92157D752AE98F4400165C70 /* DittoActionButton.swift in Sources */,
+				92EBBB692AD5FCA9008F6E9C /* LinkBankView.swift in Sources */,
+				928D75F72AD4759F008FCC4D /* Banking_App.swift in Sources */,
+				928D76082AD4770B008FCC4D /* ConfirmIdentityView.swift in Sources */,
+				928D76132AD47A03008FCC4D /* RouterView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		92157D6A2AE9830D00165C70 /* components.stringsdict */ = {
+			isa = PBXVariantGroup;
+			children = (
+				92157D6B2AE9830D00165C70 /* portuguese---br-sample */,
+				92157D6C2AE9830E00165C70 /* en */,
+			);
+			name = components.stringsdict;
+			sourceTree = "<group>";
+		};
+		92157D6E2AE9830E00165C70 /* components.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				92157D6F2AE9830E00165C70 /* portuguese---br-sample */,
+				92157D702AE9830E00165C70 /* en */,
+			);
+			name = components.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		928D76002AD475A0008FCC4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		928D76012AD475A0008FCC4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		928D76032AD475A0008FCC4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Banking App/Banking_App.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Banking App/Preview Content\"";
+				DEVELOPMENT_TEAM = FT47RL95YX;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Banking-App-Info.plist";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dittowords.ios.Banking-App-Example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		928D76042AD475A0008FCC4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Banking App/Banking_App.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Banking App/Preview Content\"";
+				DEVELOPMENT_TEAM = FT47RL95YX;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Banking-App-Info.plist";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dittowords.ios.Banking-App-Example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		928D75EE2AD4759F008FCC4D /* Build configuration list for PBXProject "Banking App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				928D76002AD475A0008FCC4D /* Debug */,
+				928D76012AD475A0008FCC4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		928D76022AD475A0008FCC4D /* Build configuration list for PBXNativeTarget "Banking App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				928D76032AD475A0008FCC4D /* Debug */,
+				928D76042AD475A0008FCC4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		92EBBB222AD5B8A4008F6E9C /* XCRemoteSwiftPackageReference "swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dittowords/swift";
+			requirement = {
+				branch = dev;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+	};
+	rootObject = 928D75EB2AD4759F008FCC4D /* Project object */;
+}
