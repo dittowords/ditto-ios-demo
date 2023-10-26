@@ -22,12 +22,18 @@ To run the sample app locally:
 3. Select a simulator from the top schema/simulator selection bar
 4. Press the play button to run the app on the selected simulator
 
+### Testing Localization
+
 The project is setup to use the system language on the machine it's running on. To force a specific language (for example, Portuguese) do the following steps:
 
 1. Select the Target selection drop down at the top of xcode and select edit schema.
+![Screenshot 2023-10-26 at 10 40 19 AM](https://github.com/dittowords/ditto-ios-demo/assets/19922122/30b2f934-d11f-4872-a5d5-3ac303d5c47e)
 2. Select the Run side menu item then select the options tab. Scroll down until you see the App Language input.
+![Screenshot 2023-10-26 at 10 40 46 AM](https://github.com/dittowords/ditto-ios-demo/assets/19922122/a0457fd3-cb55-41a7-894e-b0885d3550cd)
 3. Under the App Language input, select the language you would like to run the app in. Supported languages using the provided string variants should show up at the top.
-4. After selecting your language, close the popup and run the app again. Tada! Your app is now using the localized strings.
+![Screenshot 2023-10-26 at 10 51 02 AM](https://github.com/dittowords/ditto-ios-demo/assets/19922122/fd132da9-618a-4690-a16e-1022a1f5917a)
+4. After selecting your language, close the popup and run the app again or refresh the SwiftUI Previews. Tada! Your app is now using the localized strings.
+![Screenshot 2023-10-26 at 10 51 18 AM](https://github.com/dittowords/ditto-ios-demo/assets/19922122/bbfcffa9-53a6-43f8-a583-2bfa6c0c4d7e)
 
 ## 2. Setting up the Ditto CLI 🤖
 
