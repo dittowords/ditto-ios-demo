@@ -36,8 +36,10 @@ struct DittoActionButton: View {
     
 }
 
-#Preview {
-    DittoActionButton(title: "Cancel") {
-        
+struct DittoActionButton_Previews: PreviewProvider {
+    static var previews: some View {
+        DittoActionButton(title: "Cancel") {
+            
+        }
     }
 }

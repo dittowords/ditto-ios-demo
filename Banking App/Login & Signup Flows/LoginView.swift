@@ -20,7 +20,7 @@ struct LoginView: View {
                 
                 Spacer()
                 
-                Image(ImageResource(name: "DittoPayLogo", bundle: Bundle.main))
+                Image("DittoPayLogo")
                     .frame(height: 35)
                 
                 Spacer()
@@ -84,10 +84,12 @@ struct LoginView: View {
     
 }
 
-#Preview {
-    NavigationStack {
-        LoginView()
-            .environmentObject(Router())
-            .environmentObject(AppState())
+struct LoginView_Previews: PreviewProvider {
+    static var previews: some View {
+        NavigationStack {
+            LoginView()
+                .environmentObject(Router())
+                .environmentObject(AppState())
+        }
     }
 }

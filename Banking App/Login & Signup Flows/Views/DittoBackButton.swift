@@ -35,6 +35,8 @@ struct DittoBackButton: View {
     
 }
 
-#Preview {
-    DittoBackButton() {}
+struct DittoBackButton_Previews: PreviewProvider {
+    static var previews: some View {
+        DittoBackButton() {}
+    }
 }

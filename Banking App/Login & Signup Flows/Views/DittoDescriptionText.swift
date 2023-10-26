@@ -24,6 +24,9 @@ struct DittoDescriptionText: View {
     
 }
 
-#Preview {
-    DittoDescriptionText(text: "Some long description that explains something about something somewhere in the app.")
+struct DittoDescriptionText_Previews: PreviewProvider {
+    static var previews: some View {
+        DittoDescriptionText(text: "Some long description that explains something about something somewhere in the app.")
+    }
 }
+

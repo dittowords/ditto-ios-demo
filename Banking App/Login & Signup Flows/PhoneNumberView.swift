@@ -5,32 +5,7 @@
 //  Created by Jason Rodriguez on 10/9/23.
 //
 
-import SwiftUI
-
-extension String {
-    
-    func formatPhoneNumber() -> String {
-        let cleanNumber = components(separatedBy: CharacterSet.decimalDigits.inverted).joined()
-        
-        let mask = "(XXX) XXX-XXXX"
-        
-        var result = ""
-        var startIndex = cleanNumber.startIndex
-        let endIndex = cleanNumber.endIndex
-        
-        for char in mask where startIndex < endIndex {
-            if char == "X" {
-                result.append(cleanNumber[startIndex])
-                startIndex = cleanNumber.index(after: startIndex)
-            } else {
-                result.append(char)
-            }
-        }
-        
-        return result
-    }
-    
-}
+import SwiftUI	
 
 struct PhoneNumberView: View {
     
@@ -41,7 +16,7 @@ struct PhoneNumberView: View {
         
         VStack(alignment: .leading, spacing: 0) {
             
-            Image(ImageResource(name: "DittoPayLogo", bundle: Bundle.main))
+            Image("DittoPayLogo")
                 .frame(height: 25)
                 .padding(.top, 18)
                 .padding(.bottom, 25)
@@ -58,17 +33,10 @@ struct PhoneNumberView: View {
                     
                     DittoTextField(placeholderText: Ditto.inputPhoneNumberPlaceholderSample(), text: $appState.phoneNumber).padding(.bottom, 8)
                     
-                    if #available(iOS 17.0, *) {
-                        DittoDescriptionText(text: Ditto.onboardingPhoneNumberDisclosureSample())
-                            .onChange(of: appState.phoneNumber) {
-                                if !appState.phoneNumber.isEmpty {
-                                    appState.phoneNumber = appState.phoneNumber.formatPhoneNumber()
-                                }
-                            }
-                    } else {
-                        DittoDescriptionText(text: Ditto.onboardingPhoneNumberDisclosureSample())
-                    }
+                    DittoDescriptionText(text: Ditto.onboardingPhoneNumberDisclosureSample())
+                    
                 }
+                
             }
             
             Spacer()
@@ -91,10 +59,12 @@ struct PhoneNumberView: View {
     
 }
 
-#Preview {
-    NavigationStack {
-        PhoneNumberView()
-            .environmentObject(Router())
-            .environmentObject(AppState())
+struct PhoneNumberView_Previews: PreviewProvider {
+    static var previews: some View {
+        NavigationStack {
+            PhoneNumberView()
+                .environmentObject(Router())
+                .environmentObject(AppState())
+        }
     }
 }

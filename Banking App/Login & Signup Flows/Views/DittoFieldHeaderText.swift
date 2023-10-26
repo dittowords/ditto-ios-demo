@@ -24,6 +24,9 @@ struct DittoFieldHeaderText: View {
     
 }
 
-#Preview {
-    DittoFieldHeaderText(text: "Email Example")
+struct DittoFieldHeaderText_Previews: PreviewProvider {
+    static var previews: some View {
+        DittoFieldHeaderText(text: "Email Example")
+    }
 }
+

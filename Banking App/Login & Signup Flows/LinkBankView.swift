@@ -16,7 +16,7 @@ struct LinkBankView: View {
         
         VStack(alignment: .leading, spacing: 0) {
             
-            Image(ImageResource(name: "DittoPayLogo", bundle: Bundle.main))
+            Image("DittoPayLogo")
                 .frame(height: 25)
                 .padding(.top, 18)
                 .padding(.bottom, 25)
@@ -105,10 +105,12 @@ struct LinkBankView: View {
     
 }
 
-#Preview {
-    NavigationStack {
-        LinkBankView()
-            .environmentObject(Router())
-            .environmentObject(AppState())
+struct LinkBankView_Previews: PreviewProvider {
+    static var previews: some View {
+        NavigationStack {
+            LinkBankView()
+                .environmentObject(Router())
+                .environmentObject(AppState())
+        }
     }
 }

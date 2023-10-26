@@ -25,6 +25,8 @@ struct DittoTitleText: View {
     
 }
 
-#Preview {
-    DittoTitleText(text: "Some long Title")
+struct DittoTitleText_Previews: PreviewProvider {
+    static var previews: some View {
+        DittoTitleText(text: "Some long Title")
+    }
 }

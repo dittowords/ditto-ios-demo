@@ -40,8 +40,10 @@ struct DittoConfirmButton: View {
     
 }
 
-#Preview {
-    DittoConfirmButton(title: "Example Button") {
-        
+struct DittoConfirmButton_Previews: PreviewProvider {
+    static var previews: some View {
+        DittoConfirmButton(title: "Example Button") {
+            
+        }
     }
 }

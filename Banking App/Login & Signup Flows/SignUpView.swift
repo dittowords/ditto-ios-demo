@@ -16,7 +16,7 @@ struct SignUpView: View {
         
         VStack(alignment: .leading, spacing: 0) {
             
-            Image(ImageResource(name: "DittoPayLogo", bundle: Bundle.main))
+            Image("DittoPayLogo")
                 .frame(height: 25)
                 .padding(.top, 18)
                 .padding(.bottom, 25)
@@ -28,33 +28,41 @@ struct SignUpView: View {
                 
                 VStack(alignment: .leading, spacing: 0) {
                     
-                    DittoDescriptionText(text: Ditto.onboardingProfileIdDisclaimerSample())
-                        .padding(.bottom, 25)
+                    Group {
+                        
+                        DittoDescriptionText(text: Ditto.onboardingProfileIdDisclaimerSample())
+                            .padding(.bottom, 25)
+                        
+                        DittoFieldHeaderText(text: Ditto.inputFirstNameLabelSample())
+                        
+                        DittoTextField(placeholderText: "", text: $appState.firstName)
+                            .padding(.bottom, 25)
+                        
+                        DittoFieldHeaderText(text: Ditto.inputMiddleNameLabelSample())
+                        
+                        DittoDescriptionText(text: Ditto.inputMiddleNameHelperTextSample())
+                            .padding(.bottom, 4)
+                        
+                        DittoTextField(placeholderText: "", text: $appState.middleName)
+                            .padding(.bottom, 25)
+                        
+                    }
                     
-                    DittoFieldHeaderText(text: Ditto.inputFirstNameLabelSample())
-                    
-                    DittoTextField(placeholderText: "", text: $appState.firstName)
-                        .padding(.bottom, 25)
-                    
-                    DittoFieldHeaderText(text: Ditto.inputMiddleNameLabelSample())
-                    
-                    DittoDescriptionText(text: Ditto.inputMiddleNameHelperTextSample())
-                        .padding(.bottom, 4)
-                    
-                    DittoTextField(placeholderText: "", text: $appState.middleName)
-                        .padding(.bottom, 25)
-                    
-                    DittoFieldHeaderText(text: Ditto.inputLastNameLabelSample())
-                    
-                    DittoTextField(placeholderText: "", text: $appState.lastName)
-                        .padding(.bottom, 25)
-                    
-                    DittoFieldHeaderText(text: Ditto.inputBirthdayLabelSample())
-                    
-                    DittoDescriptionText(text: Ditto.inputBirthdayHelperTextSample())
-                        .padding(.bottom, 4)
-                    
-                    DittoTextField(placeholderText: Ditto.inputBirthdayPlaceholderSample(), text: $appState.dateOfBirth)
+                    Group {
+                        
+                        DittoFieldHeaderText(text: Ditto.inputLastNameLabelSample())
+                        
+                        DittoTextField(placeholderText: "", text: $appState.lastName)
+                            .padding(.bottom, 25)
+                        
+                        DittoFieldHeaderText(text: Ditto.inputBirthdayLabelSample())
+                        
+                        DittoDescriptionText(text: Ditto.inputBirthdayHelperTextSample())
+                            .padding(.bottom, 4)
+                        
+                        DittoTextField(placeholderText: Ditto.inputBirthdayPlaceholderSample(), text: $appState.dateOfBirth)
+                        
+                    }
                     
                 }
                 
@@ -94,10 +102,12 @@ struct SignUpView: View {
     
 }
 
-#Preview {
-    NavigationStack {
-        SignUpView()
-            .environmentObject(Router())
-            .environmentObject(AppState())
+struct SignUpView_Previews: PreviewProvider {
+    static var previews: some View {
+        NavigationStack {
+            SignUpView()
+                .environmentObject(Router())
+                .environmentObject(AppState())
+        }
     }
 }

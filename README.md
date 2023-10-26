@@ -16,7 +16,7 @@ We also use the sample app to showcase how you can use Ditto’s developer integ
 To run the sample app locally:
 
 1. Clone this repository
-2. Open the DittoPay project in Xcode
+2. Open the DittoPay project in Xcode (requires a minimum of version 14)
 3. Select a simulator from the top schema/simulator selection bar
 4. Press the play button to run the app on the selected simulator
 

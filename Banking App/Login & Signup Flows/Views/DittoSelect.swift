@@ -61,11 +61,11 @@ struct DittoSelect: View {
     
 }
 
-#Preview {
-    var countryList = ["Afghanistan","Albania","Algeria","Andorra"];
-    
-    @State var selection: String?
-    var placeholder = "Select"
-    
-    return DittoSelect(placeholder: placeholder, options: countryList, selected: $selection)
+struct DittoSelect_Previews: PreviewProvider {
+    @State static var selection: String?
+    static var previews: some View {
+        var countryList = ["Afghanistan","Albania","Algeria","Andorra"];
+        var placeholder = "Select"
+        return DittoSelect(placeholder: placeholder, options: countryList, selected: $selection)
+    }
 }

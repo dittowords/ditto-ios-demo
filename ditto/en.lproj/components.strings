@@ -2,6 +2,29 @@
 
 "cards.label.expiration-sample" = "Expiration";
 
+/* Used to bring user to personalized offers flow */
+"cards.offer-sample" = "See personalized recommendations and offers.";
+
+/* Keep it short and concise */
+"errors.offline.description-sample" = "Sorry, we couldn\'t [what the user was trying to do]. Please try again in a few minutes.";
+
+"errors.offline.header-sample" = "Error [what user was trying to do]";
+
+/* Feedback that's tailored to user's current financial status */
+"home.budget-feedback.description-sample" = "You\'re well within all of your budgets. ";
+
+/* Feedback that's tailored to user's current financial status */
+"home.budget-feedback.header-sample" = "🎉 Excellent work!";
+
+/* Action to start process of creating another budget limit for user. */
+"home.cta.create-budget-sample" = "Create a new budget";
+
+/* Action to start process of requesting a payment from another user(s) */
+"home.cta.request-payment-sample" = "Request a payment";
+
+/* Action to start process of sending a payment to another user(s) */
+"home.cta.send-payment-sample" = "Send a payment";
+
 /* Disclaimer on age mininum to create an account. */
 "input.birthday.helper-text-sample" = "You must to be 18 or older.";
 
@@ -49,12 +72,12 @@
 
 "onboarding.confirm-identity.header-sample" = "A few more questions";
 
-"onboarding.cta.back-sample" = "<- Back";
+"onboarding.cta.back-sample" = "← Back";
 
 /* Action that takes user to password recovery flow */
 "onboarding.cta.forgot-password-sample" = "Forgot Password?";
 
-"onboarding.cta.next-sample" = "Next";
+"onboarding.cta.next-sample" = "Done";
 
 "onboarding.cta.skip-sample" = "Skip";
 
@@ -93,7 +116,7 @@
 /* Used when confirming user's phone number */
 "onboarding.phone-number.h2-sample" = "We\'ll confirm it by sending a text.";
 
-"onboarding.profile.header-sample" = "Tell us about you";
+"onboarding.profile.header-sample" = "Tell us about you my friend";
 
 /* Used to make sure users enter their legal information */
 "onboarding.profile.id-disclaimer-sample" = "Please enter your info exactly as it appears on your ID. We may need to ask you for ID verification later.";

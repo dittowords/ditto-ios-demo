@@ -29,7 +29,9 @@ struct DittoTextField: View {
     
 }
 
-#Preview {
-    @State var text: String = ""
-    return DittoTextField(placeholderText: "Placeholder", text: $text)
+struct DittoTextField_Previews: PreviewProvider {
+    @State static var text: String = ""
+    static var previews: some View {
+        return DittoTextField(placeholderText: "Placeholder", text: $text)
+    }
 }

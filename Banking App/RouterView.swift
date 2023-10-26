@@ -16,6 +16,8 @@ struct RouterView: View {
     
 }
 
-#Preview {
-    RouterView()
+struct RouterView_Previews: PreviewProvider {
+    static var previews: some View {
+        RouterView()
+    }
 }
