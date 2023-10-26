@@ -87,5 +87,7 @@ struct LoginView: View {
 #Preview {
     NavigationStack {
         LoginView()
+            .environmentObject(Router())
+            .environmentObject(AppState())
     }
 }

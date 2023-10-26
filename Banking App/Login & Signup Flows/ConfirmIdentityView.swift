@@ -91,5 +91,7 @@ struct ConfirmIdentityView: View {
 #Preview {
     NavigationStack {
         ConfirmIdentityView()
+            .environmentObject(Router())
+            .environmentObject(AppState())
     }
 }

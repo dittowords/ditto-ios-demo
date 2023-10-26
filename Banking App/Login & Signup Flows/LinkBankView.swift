@@ -108,5 +108,7 @@ struct LinkBankView: View {
 #Preview {
     NavigationStack {
         LinkBankView()
+            .environmentObject(Router())
+            .environmentObject(AppState())
     }
 }

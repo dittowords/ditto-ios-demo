@@ -43,13 +43,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		92157D6B2AE9830D00165C70 /* portuguese---br-sample */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = "portuguese---br-sample"; path = "ditto/portuguese---br-sample.lproj/components.stringsdict"; sourceTree = SOURCE_ROOT; };
 		92157D6C2AE9830E00165C70 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = en; path = ditto/en.lproj/components.stringsdict; sourceTree = SOURCE_ROOT; };
 		92157D6D2AE9830E00165C70 /* Ditto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Ditto.swift; path = ditto/Ditto.swift; sourceTree = SOURCE_ROOT; };
-		92157D6F2AE9830E00165C70 /* portuguese---br-sample */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "portuguese---br-sample"; path = "ditto/portuguese---br-sample.lproj/components.strings"; sourceTree = SOURCE_ROOT; };
 		92157D702AE9830E00165C70 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = ditto/en.lproj/components.strings; sourceTree = SOURCE_ROOT; };
 		92157D742AE98F4400165C70 /* DittoActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DittoActionButton.swift; sourceTree = "<group>"; };
 		92157D762AE994A000165C70 /* DittoBackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DittoBackButton.swift; sourceTree = "<group>"; };
+		92157D792AEADDE000165C70 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "ditto/pt-BR.lproj/components.strings"; sourceTree = SOURCE_ROOT; };
+		92157D7A2AEADDE000165C70 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = "pt-BR"; path = "ditto/pt-BR.lproj/components.stringsdict"; sourceTree = SOURCE_ROOT; };
 		928D75F32AD4759F008FCC4D /* Banking App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Banking App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		928D75F62AD4759F008FCC4D /* Banking_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Banking_App.swift; sourceTree = "<group>"; };
 		928D75F82AD4759F008FCC4D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -247,7 +247,6 @@
 				"pt-BR",
 				base,
 				"portuguese---br-sample",
-				"portuguese---BR-sample",
 			);
 			mainGroup = 928D75EA2AD4759F008FCC4D;
 			packageReferences = (
@@ -319,8 +318,8 @@
 		92157D6A2AE9830D00165C70 /* components.stringsdict */ = {
 			isa = PBXVariantGroup;
 			children = (
-				92157D6B2AE9830D00165C70 /* portuguese---br-sample */,
 				92157D6C2AE9830E00165C70 /* en */,
+				92157D7A2AEADDE000165C70 /* pt-BR */,
 			);
 			name = components.stringsdict;
 			sourceTree = "<group>";
@@ -328,8 +327,8 @@
 		92157D6E2AE9830E00165C70 /* components.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				92157D6F2AE9830E00165C70 /* portuguese---br-sample */,
 				92157D702AE9830E00165C70 /* en */,
+				92157D792AEADDE000165C70 /* pt-BR */,
 			);
 			name = components.strings;
 			sourceTree = "<group>";

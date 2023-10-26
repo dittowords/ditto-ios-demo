@@ -97,5 +97,7 @@ struct SignUpView: View {
 #Preview {
     NavigationStack {
         SignUpView()
+            .environmentObject(Router())
+            .environmentObject(AppState())
     }
 }

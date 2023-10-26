@@ -9,4 +9,4 @@ format:
   - ios-stringsdict
 iosLocales:
   - base: en
-  - pt: portuguese---br-sample
+  - portuguese---br-sample: pt-BR

@@ -85,5 +85,7 @@ struct AccountDetailsView: View {
 #Preview {
     NavigationStack {
         AccountDetailsView()
+            .environmentObject(Router())
+            .environmentObject(AppState())
     }
 }

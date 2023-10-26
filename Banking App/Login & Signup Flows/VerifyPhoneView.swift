@@ -74,5 +74,7 @@ struct VerifyPhoneView: View {
 #Preview {
     NavigationStack {
         VerifyPhoneView()
+            .environmentObject(Router())
+            .environmentObject(AppState())
     }
 }

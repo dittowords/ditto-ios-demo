@@ -90,5 +90,7 @@ struct PhoneNumberView: View {
 #Preview {
     NavigationStack {
         PhoneNumberView()
+            .environmentObject(Router())
+            .environmentObject(AppState())
     }
 }
