@@ -11,7 +11,7 @@ We also use the sample app to showcase how you can use Ditto’s developer integ
 - Componentization
 - Variable interpolation
 
-<img width="559" alt="Screenshot 2023-10-26 at 9 37 08 AM" src="https://github.com/dittowords/ditto-ios-demo/assets/19922122/6e6dd24b-9897-4c7a-aade-44b2edbb4f22">
+<img width="1840" alt="Screenshot 2023-10-26 at 9 44 10 AM" src="https://github.com/dittowords/ditto-ios-demo/assets/19922122/90c65f06-47b1-443c-960f-b335aecc8d72">
 
 ## 1. Running the App 🛠
 
