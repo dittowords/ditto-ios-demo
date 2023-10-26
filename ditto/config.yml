@@ -7,6 +7,6 @@ variants: true
 format:
   - ios-strings
   - ios-stringsdict
-ios_locales:
+iosLocales:
   - base: en
   - pt: portuguese---br-sample

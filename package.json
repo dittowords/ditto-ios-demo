@@ -1,0 +1,13 @@
+{
+  "name": "banking-app",
+  "version": "1.0.0",
+  "description": "DittoPay is a small iOS app that corresponds with the sample project in your workspace.",
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@dittowords/cli": "^4.0.0"
+  },
+  "scripts": {
+    "ditto:pull": "npx @dittowords/cli pull"
+  }
+}
