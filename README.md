@@ -1,8 +1,6 @@
-# Sample Repo Instructions Template
+# DittoPay — iOS Demo App
 
-## DittoPay — iOS Demo App
-
-DittoPay is a small iOS app that corresponds with the sample project in your workspace. With this sample app, you can set up our [developer integrations ](https://developer.dittowords.com) to sync text edits in just a few minutes**.**
+DittoPay is a small iOS app that corresponds with the sample project in your workspace. With this sample app, you can set up our [developer integrations ](https://developer.dittowords.com) to sync text edits in just a few minutes.
 
 We also use the sample app to showcase how you can use Ditto’s developer integrations in a iOS environment for:
 
@@ -24,27 +22,28 @@ To run the sample app locally:
 
 ### Testing Localization
 
-The project is setup to use the system language on the machine it's running on. To force a specific language (for example, Portuguese) do the following steps:
+The project is set up to use the system language of the machine it's running on. To force a specific language (e.g. Portuguese), follow the instructions below:
 
-1. Select the Target selection drop down at the top of xcode and select edit schema.
-![Screenshot 2023-10-26 at 10 40 19 AM](https://github.com/dittowords/ditto-ios-demo/assets/19922122/30b2f934-d11f-4872-a5d5-3ac303d5c47e)
-2. Select the Run side menu item then select the options tab. Scroll down until you see the App Language input.
-![Screenshot 2023-10-26 at 10 40 46 AM](https://github.com/dittowords/ditto-ios-demo/assets/19922122/a0457fd3-cb55-41a7-894e-b0885d3550cd)
-3. Under the App Language input, select the language you would like to run the app in. Supported languages using the provided string variants should show up at the top.
-![Screenshot 2023-10-26 at 10 51 02 AM](https://github.com/dittowords/ditto-ios-demo/assets/19922122/fd132da9-618a-4690-a16e-1022a1f5917a)
+1. Select the Target selection drop down at the top of Xcode and click **Edit Schema**.
+   ![Screenshot 2023-10-26 at 10 40 19 AM](https://github.com/dittowords/ditto-ios-demo/assets/19922122/30b2f934-d11f-4872-a5d5-3ac303d5c47e)
+2. Select the **Run** side menu item, then select the **Options** tab. Scroll down until you see the **App Language** input.
+   ![Screenshot 2023-10-26 at 10 40 46 AM](https://github.com/dittowords/ditto-ios-demo/assets/19922122/a0457fd3-cb55-41a7-894e-b0885d3550cd)
+3. Under the **App Language** input, select the language you would like to run the app in. Supported languages using the provided string variants should show up at the top.
+   ![Screenshot 2023-10-26 at 10 51 02 AM](https://github.com/dittowords/ditto-ios-demo/assets/19922122/fd132da9-618a-4690-a16e-1022a1f5917a)
 4. After selecting your language, close the popup and run the app again or refresh the SwiftUI Previews. Tada! Your app is now using the localized strings.
-![Screenshot 2023-10-26 at 10 51 18 AM](https://github.com/dittowords/ditto-ios-demo/assets/19922122/bbfcffa9-53a6-43f8-a583-2bfa6c0c4d7e)
+   ![Screenshot 2023-10-26 at 10 51 18 AM](https://github.com/dittowords/ditto-ios-demo/assets/19922122/bbfcffa9-53a6-43f8-a583-2bfa6c0c4d7e)
 
 ## 2. Setting up the Ditto CLI 🤖
 
 This repo is already set up with the string files and string IDs of the sample project in your workspace, as well as a [config for the CLI](https://github.com/dittowords/ditto-react-demo/blob/master/src/ditto/config.yml) to sync text from the DittoPay sample components for iOS.
 
-This means all you have to do is install and authenticate to the CLI to have things be hooked up from end-to-end:
+This means all you have to do is install and authenticate the CLI to have things be hooked up from end-to-end:
 
-1. **Install the CLI:** In the root of the repository, run `npm install`. This will install all dependencies recorded in the `package.json`[LINK] file, where the latest version of the Ditto CLI is listed.
-2. **To authenticate, run the CLI:**
+1. **[Install Node.js](https://nodejs.org/en/download)**: The Ditto CLI requires v16.0.0 or higher.
+1. **Install the CLI:** In the root of the repository, run `npm install`. This will install all dependencies recorded in the `package.json` file where the latest version of the Ditto CLI is listed.
+1. **To authenticate, run the CLI:**
 
-   `[insert the correct command]`
+   `npm run ditto:pull`
 
    In this project, we’ve set up a simple [NPM script](https://docs.npmjs.com/cli/v10/using-npm/scripts) to enable using the Ditto CLI from any subdirectory, which you can view in the `scripts` property of the [package.json](https://github.com/dittowords/ditto-ios-demo/blob/master/package.json) file.
 
@@ -69,7 +68,7 @@ iosLocales:
   - portuguese---br-sample: pt-BR
 ```
 
-## 3. Syncing Ediats ✍️
+## 3. Syncing Edits ✍️
 
 1. Make edits to DittoPay text in [Ditto](https://app.dittowords.com/projects/sample). You can make edits to the components connected in the DittoPay sample project itself, or to the sample components directly!
 2. Pull in the latest edits via the Ditto CLI:
