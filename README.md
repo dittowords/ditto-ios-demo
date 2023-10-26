@@ -22,6 +22,13 @@ To run the sample app locally:
 3. Select a simulator from the top schema/simulator selection bar
 4. Press the play button to run the app on the selected simulator
 
+The project is setup to use the system language on the machine it's running on. To force a specific language (for example, Portuguese) do the following steps:
+
+1. Select the Target selection drop down at the top of xcode and select edit schema.
+2. Select the Run side menu item then select the options tab. Scroll down until you see the App Language input.
+3. Under the App Language input, select the language you would like to run the app in. Supported languages using the provided string variants should show up at the top.
+4. After selecting your language, close the popup and run the app again. Tada! Your app is now using the localized strings.
+
 ## 2. Setting up the Ditto CLI 🤖
 
 This repo is already set up with the string files and string IDs of the sample project in your workspace, as well as a [config for the CLI](https://github.com/dittowords/ditto-react-demo/blob/master/src/ditto/config.yml) to sync text from the DittoPay sample components for iOS.
@@ -53,7 +60,7 @@ format:
   - ios-stringsdict
 iosLocales:
   - base: en
-  - pt: portuguese---br-sample
+  - portuguese---br-sample: pt-BR
 ```
 
 ## 3. Syncing Ediats ✍️
