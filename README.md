@@ -16,7 +16,7 @@ We also use the sample app to showcase how you can use Ditto’s developer integ
 To run the sample app locally:
 
 1. Clone this repository
-2. Open the DittoPay project in XCode
+2. Open the DittoPay project in Xcode
 3. Select a simulator from the top schema/simulator selection bar
 4. Press the play button to run the app on the selected simulator
 
@@ -24,7 +24,7 @@ To run the sample app locally:
 
 The project is set up to use the system language of the machine it's running on. To force a specific language (e.g. Portuguese), follow the instructions below:
 
-1. Select the Target selection drop down at the top of XCode and click **Edit Schema**.
+1. Select the Target selection drop down at the top of Xcode and click **Edit Schema**.
    ![Screenshot 2023-10-26 at 10 40 19 AM](https://github.com/dittowords/ditto-ios-demo/assets/19922122/30b2f934-d11f-4872-a5d5-3ac303d5c47e)
 2. Select the **Run** side menu item, then select the **Options** tab. Scroll down until you see the **App Language** input.
    ![Screenshot 2023-10-26 at 10 40 46 AM](https://github.com/dittowords/ditto-ios-demo/assets/19922122/a0457fd3-cb55-41a7-894e-b0885d3550cd)
