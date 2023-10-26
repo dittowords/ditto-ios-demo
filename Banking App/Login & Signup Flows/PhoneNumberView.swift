@@ -58,12 +58,16 @@ struct PhoneNumberView: View {
                     
                     DittoTextField(placeholderText: Ditto.inputPhoneNumberPlaceholderSample(), text: $appState.phoneNumber).padding(.bottom, 8)
                     
-                    DittoDescriptionText(text: Ditto.onboardingPhoneNumberDisclosureSample())
-                        .onChange(of: appState.phoneNumber) {
-                            if !appState.phoneNumber.isEmpty {
-                                appState.phoneNumber = appState.phoneNumber.formatPhoneNumber()
+                    if #available(iOS 17.0, *) {
+                        DittoDescriptionText(text: Ditto.onboardingPhoneNumberDisclosureSample())
+                            .onChange(of: appState.phoneNumber) {
+                                if !appState.phoneNumber.isEmpty {
+                                    appState.phoneNumber = appState.phoneNumber.formatPhoneNumber()
+                                }
                             }
-                        }
+                    } else {
+                        DittoDescriptionText(text: Ditto.onboardingPhoneNumberDisclosureSample())
+                    }
                 }
             }
             
