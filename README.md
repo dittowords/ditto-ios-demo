@@ -11,7 +11,7 @@ We also use the sample app to showcase how you can use Ditto’s developer integ
 - Componentization
 - Variable interpolation
 
-<img width="559" alt="Screenshot 2023-10-26 at 9 37 08 AM" src="https://github.com/dittowords/ditto-ios-demo/assets/19922122/6e6dd24b-9897-4c7a-aade-44b2edbb4f22">
+<img width="1840" alt="Screenshot 2023-10-26 at 9 44 10 AM" src="https://github.com/dittowords/ditto-ios-demo/assets/19922122/90c65f06-47b1-443c-960f-b335aecc8d72">
 
 ## 1. Running the App 🛠
 
@@ -21,6 +21,19 @@ To run the sample app locally:
 2. Open the DittoPay project in Xcode
 3. Select a simulator from the top schema/simulator selection bar
 4. Press the play button to run the app on the selected simulator
+
+### Testing Localization
+
+The project is setup to use the system language on the machine it's running on. To force a specific language (for example, Portuguese) do the following steps:
+
+1. Select the Target selection drop down at the top of xcode and select edit schema.
+![Screenshot 2023-10-26 at 10 40 19 AM](https://github.com/dittowords/ditto-ios-demo/assets/19922122/30b2f934-d11f-4872-a5d5-3ac303d5c47e)
+2. Select the Run side menu item then select the options tab. Scroll down until you see the App Language input.
+![Screenshot 2023-10-26 at 10 40 46 AM](https://github.com/dittowords/ditto-ios-demo/assets/19922122/a0457fd3-cb55-41a7-894e-b0885d3550cd)
+3. Under the App Language input, select the language you would like to run the app in. Supported languages using the provided string variants should show up at the top.
+![Screenshot 2023-10-26 at 10 51 02 AM](https://github.com/dittowords/ditto-ios-demo/assets/19922122/fd132da9-618a-4690-a16e-1022a1f5917a)
+4. After selecting your language, close the popup and run the app again or refresh the SwiftUI Previews. Tada! Your app is now using the localized strings.
+![Screenshot 2023-10-26 at 10 51 18 AM](https://github.com/dittowords/ditto-ios-demo/assets/19922122/bbfcffa9-53a6-43f8-a583-2bfa6c0c4d7e)
 
 ## 2. Setting up the Ditto CLI 🤖
 
@@ -53,7 +66,7 @@ format:
   - ios-stringsdict
 iosLocales:
   - base: en
-  - pt: portuguese---br-sample
+  - portuguese---br-sample: pt-BR
 ```
 
 ## 3. Syncing Ediats ✍️
