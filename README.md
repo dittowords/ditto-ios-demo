@@ -11,25 +11,20 @@ We also use the sample app to showcase how you can use Ditto’s developer integ
 - Componentization
 - Variable interpolation
 
-[ INSERT IMAGE OF APP ]
-
-[REACT ONLY]We showcase this functionality with multiple frameworks:
-
-- On [master](https://github.com/dittowords/ditto-demo/tree/master), DittoPay is integrated with Ditto **using [ditto-react](https://github.com/dittowords/ditto-react).**
-- On [react-i18next](https://github.com/dittowords/ditto-demo/tree/react-i18next), DittoPay is integrated with Ditto **using [react-i18next](https://react.i18next.com/).**
-
-If you switch between the branches, make sure to re-run `npm install` to ensure your installed dependencies remain up-to-date.[/REACT ONLY]
+<img width="559" alt="Screenshot 2023-10-26 at 9 37 08 AM" src="https://github.com/dittowords/ditto-ios-demo/assets/19922122/6e6dd24b-9897-4c7a-aade-44b2edbb4f22">
 
 ## 1. Running the App 🛠
 
 To run the sample app locally:
 
 1. Clone this repository
-2. [insert additional steps to run the app — might be framework specific]
+2. Open the DittoPay project in Xcode
+3. Select a simulator from the top schema/simulator selection bar
+4. Press the play button to run the app on the selected simulator
 
 ## 2. Setting up the Ditto CLI 🤖
 
-This repo is already set up with the string files and string IDs of the sample project in your workspace, as well as a config for the CLI[TODO: Link configuration page] to sync text from the DittoPay sample components for [FRAMEWORK].
+This repo is already set up with the string files and string IDs of the sample project in your workspace, as well as a [config for the CLI](https://github.com/dittowords/ditto-react-demo/blob/master/src/ditto/config.yml) to sync text from the DittoPay sample components for iOS.
 
 This means all you have to do is install and authenticate to the CLI to have things be hooked up from end-to-end:
 
@@ -38,31 +33,40 @@ This means all you have to do is install and authenticate to the CLI to have thi
 
    `[insert the correct command]`
 
-   In this project, we’ve set up a simple [NPM script](https://docs.npmjs.com/cli/v10/using-npm/scripts) to enable using the Ditto CLI from any subdirectory, which you can view in the `scripts` property of the `package.json` [INSERT LINK] file.
+   In this project, we’ve set up a simple [NPM script](https://docs.npmjs.com/cli/v10/using-npm/scripts) to enable using the Ditto CLI from any subdirectory, which you can view in the `scripts` property of the [package.json](https://github.com/dittowords/ditto-ios-demo/blob/master/package.json) file.
 
-   You can always run the CLI directly using `npx` (see CLI docs[LINK]), but this setup is reliable and is similar to one you might want in your own production environment.
+   You can always run the CLI directly using `npx` (see [CLI docs](http://localhost:5555/cli-reference/authentication)), but this setup is reliable and is similar to one you might want in your own production environment.
 
    You’ll be prompted to provide your API key if it’s your first time running the CLI.
 
-Note: you can view the CLI config at `/src/config.yml`:
+Note: you can view the CLI config at `/ditto/config.yml`:
 
 ```yaml
-[Insert example of what the config should be]
+sources:
+  components:
+    folders:
+      - id: sample-components
+        name: Sample Components
+variants: true
+format:
+  - ios-strings
+  - ios-stringsdict
+iosLocales:
+  - base: en
+  - pt: portuguese---br-sample
 ```
 
-## 3. Syncing Edits ✍️
+## 3. Syncing Ediats ✍️
 
-1. Make edits to DittoPay text in Ditto[TODO: Link Web-app]. You can make edits to the components connected in the DittoPay sample project itself, or to the sample components directly!
+1. Make edits to DittoPay text in [Ditto](https://app.dittowords.com/projects/sample). You can make edits to the components connected in the DittoPay sample project itself, or to the sample components directly!
 2. Pull in the latest edits via the Ditto CLI:
 
-   `[insert the correct command]`
-
-3. [Insert instructions if rebuilding is needed]
+   `npm run ditto:pull`
 
 ## Feature Requests and Support
 
 Is there another library/framework that you think we should create a demo for?
 
-Is there a Ditto feature you want an example for in [FRAMEWORK]?
+Is there a Ditto feature you want an example for in iOS?
 
-Please let us know by opening an issue[TODO: LINK REPO] or sending us an email!
+Please let us know by opening an [issue](https://github.com/dittowords/ditto-ios-demo/issues) or sending us an email!
