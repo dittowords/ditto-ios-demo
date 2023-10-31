@@ -68,7 +68,7 @@ struct LinkBankView: View {
                         
                         Image(systemName: "checkerboard.shield")
                         
-                        DittoDescriptionText(text: Ditto.onboardingLinkBankDisclaimerSample(nmlsId: "004532"))
+                        DittoDescriptionText(text: Ditto.onboardingLinkBankDisclaimerSample( nmlsIdSample: "004532"))
                         
                     }
                     .foregroundColor(Color(red: 0.63, green: 0.63, blue: 0.63))

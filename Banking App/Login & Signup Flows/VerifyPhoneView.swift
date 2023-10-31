@@ -26,7 +26,7 @@ struct VerifyPhoneView: View {
                 
                 VStack(alignment: .leading, spacing: 0) {
                     
-                    DittoDescriptionText(text: Ditto.onboardingPhoneNumberVerificationHintTextSample(pluralCount: 10, userPhoneNumber: appState.phoneNumber, verificationCodeExpiration: "2"))
+                    DittoDescriptionText(text: Ditto.onboardingPhoneNumberVerificationHintTextSample(pluralCount: 10, userPhoneNumberSample: appState.phoneNumber, verificationCodeExpirationSample: "2"))
                         .padding(.bottom, 25)
                     
                     DittoTextField(placeholderText: "XXXXX", text: $appState.code)

@@ -66,7 +66,7 @@ struct AccountDetailsView: View {
                 
                 Spacer()
                 
-                Text(Ditto.onboardingSignUpDisclaimerSample(termsAndConditionsLink: "Terms and Conditions"))
+                Text(Ditto.onboardingSignUpDisclaimerSample(termsAndConditionsLinkSample: "Terms and Conditions"))
                     .font(Font.custom("Inter", size: 16))
                     .foregroundColor(Color(red: 0.63, green: 0.63, blue: 0.63))
                 

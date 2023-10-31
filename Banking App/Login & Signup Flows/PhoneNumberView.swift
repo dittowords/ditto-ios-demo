@@ -21,7 +21,7 @@ struct PhoneNumberView: View {
                 .padding(.top, 18)
                 .padding(.bottom, 25)
             
-            DittoTitleText(text: Ditto.onboardingEnterPhoneNumberHeaderSample(userName: appState.firstName))
+            DittoTitleText(text: Ditto.onboardingEnterPhoneNumberHeaderSample(userNameSample: appState.firstName))
                 .padding(.bottom, 6)
             
             ScrollView {
