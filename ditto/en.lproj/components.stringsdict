@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plist version="1.0">
+    <dict>
+        <!--Variables: userPhoneNumberSample, verificationCodeExpirationSample-->
+        <key>onboarding.phone-number-verification.hint-text-sample</key>
+        <dict>
+            <key>NSStringLocalizedFormatKey</key>
+            <string>%1$#@count@</string>
+            <key>count</key>
+            <dict>
+                <key>NSStringFormatSpecTypeKey</key>
+                <string>NSStringPluralRuleType</string>
+                <key>NSStringFormatValueTypeKey</key>
+                <string>d</string>
+                <key>one</key>
+                <string>We sent it to %2$@. It’ll expire in %3$@ minute.</string>
+                <key>other</key>
+                <string>We sent it to %2$@. It’ll expire in %3$@ minutes.</string>
+            </dict>
+        </dict>
+    </dict>
+</plist>

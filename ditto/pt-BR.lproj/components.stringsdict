@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Variant Name: Portuguese - BR - Sample-->
+<!--Variant Description: -->
+<plist version="1.0">
+    <dict>
+        <!--Variables: userPhoneNumberSample, verificationCodeExpirationSample-->
+        <key>onboarding.phone-number-verification.hint-text-sample</key>
+        <dict>
+            <key>NSStringLocalizedFormatKey</key>
+            <string>%1$#@count@</string>
+            <key>count</key>
+            <dict>
+                <key>NSStringFormatSpecTypeKey</key>
+                <string>NSStringPluralRuleType</string>
+                <key>NSStringFormatValueTypeKey</key>
+                <string>d</string>
+                <key>one</key>
+                <string>Nós o enviamos para %2$@. Ele expirará em %3$@ minuto.</string>
+                <key>other</key>
+                <string>Nós o enviamos para %2$@. Ele expirará em %3$@ minutos.</string>
+            </dict>
+        </dict>
+    </dict>
+</plist>

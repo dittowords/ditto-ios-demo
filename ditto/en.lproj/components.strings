@@ -1,0 +1,130 @@
+"cards.label.card-number-sample" = "Card No.";
+
+"cards.label.expiration-sample" = "Expiration";
+
+/* Used to bring user to personalized offers flow */
+"cards.offer-sample" = "See personalized recommendations and offers.";
+
+/* Keep it short and concise */
+"errors.offline.description-sample" = "Sorry, we couldn\'t [what the user was trying to do]. Please try again in a few minutes.";
+
+"errors.offline.header-sample" = "Error [what user was trying to do]";
+
+/* Feedback that's tailored to user's current financial status */
+"home.budget-feedback.description-sample" = "You\'re well within all of your budgets. ";
+
+/* Feedback that's tailored to user's current financial status */
+"home.budget-feedback.header-sample" = "🎉 Excellent work!";
+
+/* Action to start process of creating another budget limit for user. */
+"home.cta.create-budget-sample" = "Create a new budget";
+
+/* Action to start process of requesting a payment from another user(s) */
+"home.cta.request-payment-sample" = "Request a payment";
+
+/* Action to start process of sending a payment to another user(s) */
+"home.cta.send-payment-sample" = "Send a payment";
+
+/* Disclaimer on age mininum to create an account. */
+"input.birthday.helper-text-sample" = "You must to be 18 or older.";
+
+"input.birthday.label-sample" = "Date of birth";
+
+"input.birthday.placeholder-sample" = "MM/DD/YYYY";
+
+"input.card-expiration.placeholder-sample" = "MM/YY";
+
+/* Used to reassure user that we won't run a credit check using the SSN and address they provide us */
+"input.confirm-identity.helper-text-sample" = "Don\'t worry, we won\'t run a credit check.";
+
+"input.confirm-password.label-sample" = "Confirm password";
+
+"input.country-of-residence.label-sample" = "Country of residence";
+
+"input.cvv.label-sample" = "CVV";
+
+"input.email.label-sample" = "Email address";
+
+"input.email.placeholder-sample" = "name@company.com";
+
+"input.first-name.label-sample" = "First name";
+
+"input.last-4-ssn.label-sample" = "Last 4 digits of SSN";
+
+"input.last-name.label-sample" = "Last name";
+
+/* Used to make sure user only enters their middle name if it's on their official ID */
+"input.middle-name.helper-text-sample" = "Only fill this out if it\'s shown on your ID.";
+
+"input.middle-name.label-sample" = "Middle name";
+
+"input.password.label-sample" = "Password";
+
+"input.phone-number.placeholder-sample" = "(555) 555-5555";
+
+"input.select.placeholder-sample" = "Select";
+
+"input.zip-code.label-sample" = "ZIP code";
+
+"onboarding.account-details.header-sample" = "Set up your account details";
+
+"onboarding.account-details.hint-text-sample" = "You\'ll use these to log in.";
+
+"onboarding.confirm-identity.header-sample" = "A few more questions";
+
+"onboarding.cta.back-sample" = "← Back";
+
+/* Action that takes user to password recovery flow */
+"onboarding.cta.forgot-password-sample" = "Forgot Password?";
+
+"onboarding.cta.next-sample" = "Next";
+
+"onboarding.cta.skip-sample" = "Skip";
+
+"onboarding.enter-phone-number.header-sample" = "Thanks, %1$@! What\'s your phone number?";
+
+/* Used to let user know why we need to collect information that may be deemed more personal/private */
+"onboarding.information-disclaimer.description-sample" = "We\'re required by law to collect this information to confirm your identity. Your details are safely encrypted and will never be shared with unauthorized entities.";
+
+"onboarding.information-disclaimer.header-sample" = "Why do we need this information?";
+
+/* Need to display this when we collect a user's bank info */
+"onboarding.link-bank.disclaimer-sample" = "We never store your bank details in full. We\'re a licensed provider of money transfer services (NMLS ID: %1$@).";
+
+"onboarding.link-bank.h2-sample" = "Add a bank account so you can send and receive payments.";
+
+/* Header for onboarding step for new users */
+"onboarding.link-bank.header-sample" = "Link a bank using your debit card";
+
+"onboarding.log-in.header-sample" = "Log In";
+
+/* Used to direct user to signup flow if don't already have an account */
+"onboarding.log-in.sign-up-message-sample" = "Don\'t have an account?";
+
+"onboarding.phone-number-verification.didnt-receive-sample" = "Didn\'t receive it?";
+
+"onboarding.phone-number-verification.header-sample" = "Please enter the verification code";
+
+/* Lets user know when the text verification code expires */
+"onboarding.phone-number-verification.hint-text-sample" = "We sent it to %1$@. It\'ll expire in %2$@ minutes.";
+
+"onboarding.phone-number-verification.resend-sample" = "Resend code";
+
+/* Make sure to include this whenever we ask for a user's phone number */
+"onboarding.phone-number.disclosure-sample" = "By providing your phone number, you consent to receiving a verification text message. Standard text messaging rates may apply based on your mobile carrier. Your number will be kept confidential and won\'t be used for any other purposes without your explicit consent.";
+
+/* Used when confirming user's phone number */
+"onboarding.phone-number.h2-sample" = "We\'ll confirm it by sending a text.";
+
+"onboarding.profile.header-sample" = "Tell us about you";
+
+/* Used to make sure users enter their legal information */
+"onboarding.profile.id-disclaimer-sample" = "Please enter your info exactly as it appears on your ID. We may need to ask you for ID verification later.";
+
+"onboarding.sign-up.cta-sample" = "Sign Up";
+
+/* Legal disclaimer for when user is creating their account */
+"onboarding.sign-up.disclaimer-sample" = "By signing up, you agree to our %1$@";
+
+/* Used to direct user to login flow if already have an account */
+"onboarding.sign-up.login-message-sample" = "Already have an account?";
