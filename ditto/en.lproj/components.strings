@@ -77,7 +77,7 @@
 /* Action that takes user to password recovery flow */
 "onboarding.cta.forgot-password-sample" = "Forgot Password?";
 
-"onboarding.cta.next-sample" = "Done";
+"onboarding.cta.next-sample" = "Next";
 
 "onboarding.cta.skip-sample" = "Skip";
 
@@ -116,7 +116,7 @@
 /* Used when confirming user's phone number */
 "onboarding.phone-number.h2-sample" = "We\'ll confirm it by sending a text.";
 
-"onboarding.profile.header-sample" = "Tell us about you my friend";
+"onboarding.profile.header-sample" = "Tell us about you";
 
 /* Used to make sure users enter their legal information */
 "onboarding.profile.id-disclaimer-sample" = "Please enter your info exactly as it appears on your ID. We may need to ask you for ID verification later.";

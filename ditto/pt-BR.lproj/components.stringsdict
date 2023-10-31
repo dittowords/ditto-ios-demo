@@ -3,7 +3,7 @@
 <!--Variant Description: -->
 <plist version="1.0">
     <dict>
-        <!--Variables: userPhoneNumber, verificationCodeExpiration-->
+        <!--Variables: userPhoneNumberSample, verificationCodeExpirationSample-->
         <key>onboarding.phone-number-verification.hint-text-sample</key>
         <dict>
             <key>NSStringLocalizedFormatKey</key>
